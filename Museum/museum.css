@@ -1,0 +1,147 @@
+:root{--col1: white;
+    --col2: brown;
+}
+
+
+
+#navs{
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%,5%;
+    display: flex;
+}
+
+#navs img{
+    width: 200px;
+    padding: 50;
+    
+}
+
+#cover{
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--col2);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+#links ul li:hover::after{
+    width: 100%;
+}
+
+
+.dropbtn{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    
+
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding-right: 5%;
+
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: #292929;
+}
+
+
+
+
+
+#box{
+    width: 90%;
+    color: var(--col1);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+
+}
+
+#box h1{
+    font-size: 60px;
+}
+
+
+#f-back{
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)), url(./img_01.webp);
+}
+
+
+@media(max-width:700px){
+    #navs img{
+        width: 100px;
+        
+    }
+
+    .dropdown{
+        padding-right: 10%;
+    }
+
+    #box h1{
+        font-size: 40px;
+    }
+
+
+    
+}
+
+
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+} 
